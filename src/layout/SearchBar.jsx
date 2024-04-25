@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'; // Import useHistory from 
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
-  //const navigate = useNavigate(); // Access the history object for navigation
+  const navigate = useNavigate(); // Access the history object for navigation
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
@@ -12,11 +12,11 @@ function SearchBar() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Navigate to the search results page with the search term as a query parameter
-    //navigate(`/search?query=${searchTerm}`);
+    navigate(`/search?query=${searchTerm}`);
   };
 
   const handleCart = () => {
-    //navigate('/cart');
+    navigate('/cart');
   }
 
   return (
