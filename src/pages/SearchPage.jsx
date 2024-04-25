@@ -43,6 +43,7 @@ const SearchResultsPage = () => {
       <div>
         <Header />
         <SearchBar />
+        Loading
       </div>
     );
 

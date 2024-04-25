@@ -5,7 +5,7 @@ import GamePage from './pages/GamePage.jsx';
 import SearchResultsPage from './pages/SearchPage.jsx';
 
 function App() {
-  console.log(import.meta.env.VITE_API_KEY) // "123"
+  //console.log(import.meta.env.VITE_API_KEY) // "123"
   return (
     <>
       <BrowserRouter>
