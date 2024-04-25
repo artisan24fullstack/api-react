@@ -12,8 +12,10 @@ const GamePage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+
     const fetchGameDetails = async () => {
       setLoading(true);
+      console.log("GamePage")
       const API_KEY = import.meta.env.VITE_API_KEY;
       try {
         const cachedGameDetails = localStorage.getItem(`game_${id}`);
@@ -25,6 +27,7 @@ const GamePage = () => {
             throw new Error('Failed to fetch game details');
           }
           const data = await response.json();
+          console.log(data)
           setGame(data);
           localStorage.setItem(`game_${id}`, JSON.stringify(data));
         }

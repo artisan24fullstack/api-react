@@ -7,7 +7,6 @@ function NewRelease() {
 
   useEffect(() => {
     const API_KEY = import.meta.env.VITE_API_KEY;
-    console.log(API_KEY)
     const storedData = localStorage.getItem('newreleasedata');
 
     const getThreeMonthsAgoDate = () => {
@@ -44,7 +43,7 @@ function NewRelease() {
     <div className='Category-Header'>
       <h2>New Release</h2>
       <div className="game-list">
-        {games.slice(0, 8).map((game, index) => (
+        {games.slice(0, 20).map((game, index) => (
           <GameCard key={index} game={game} />
         ))}
       </div>

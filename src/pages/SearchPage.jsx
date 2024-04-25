@@ -20,6 +20,7 @@ const SearchResultsPage = () => {
   const fetchGames = async (query) => {
     setLoading(true); // Set loading state to true before fetching data
     // Replace 'YOUR_API_KEY' with your actual API key from RAWG
+    console.log("SearchPage")
     const API_KEY = import.meta.env.VITE_API_KEY;
     try {
       const response = await fetch(`https://api.rawg.io/api/games?search=${query}&key=${API_KEY}`);
