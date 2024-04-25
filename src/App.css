@@ -1,0 +1,282 @@
+:root {
+  font-family: Roboto, ui-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #101011;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  /* Optionally hide horizontal scrollbar if not needed */
+}
+
+.background {
+  /* Set background properties */
+  height: 100vh;
+  width: 100vw;
+  /* You can also set other properties like background-color, background-repeat, etc. */
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.Category-Header h2 {
+  margin-left: 225px;
+  margin-top: 50px;
+}
+
+.epic-header {
+  background-color: #1a1a1f;
+  color: #fff;
+  padding: 20px 40px;
+  /* Increased padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 30px;
+  /* Increased margin between navigation items */
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 18px;
+  /* Increased font size for better readability */
+}
+
+.navigation a:hover {
+  color: #00FFFF;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  /*width: 300px;*/
+
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  width: 800px;
+  margin-right: 10px;
+  padding-left: 30px;
+  color: #fff;
+  background-color: #333;
+
+
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #d60000;
+}
+
+.search-results {
+  margin-top: 10px;
+}
+
+.search-results div {
+  margin-bottom: 5px;
+  /* Add margin between each search result */
+  color: #fff;
+}
+
+
+.SearchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 10px 10px 225px;
+}
+
+.CartButton {
+  margin-left: 1040px;
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+.CartButton:hover {
+  color: white;
+}
+
+
+
+.game-card {
+  background-color: transparent;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  backdrop-filter: blur(1px);
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.game-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+
+  font-weight: normal;
+  color: white;
+}
+
+.game-card h4 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.game-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.game-card button:hover {
+  background-color: #0056b3;
+}
+
+
+.game-card:hover img {
+  filter: brightness(75%);
+  /* Decrease brightness on hover */
+}
+
+.Title {
+  margin-left: 225px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.TopContent {
+  margin-left: 225px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.game-details {
+  margin-left: 225px;
+  max-width: 850px;
+  font-size: large;
+}
