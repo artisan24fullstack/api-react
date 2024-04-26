@@ -1,5 +1,7 @@
 Install npm i react-router-dom
 
+- https://react-icons.github.io/react-icons/
+
 ### Step-by-step template for setting up
 my-project/
 
