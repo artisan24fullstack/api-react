@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '../layout/Header';
-import SearchBar from '../layout/SearchBar';
+import Header from '../layout/Header.jsx';
+import SearchBar from '../layout/SearchBar.jsx';
 
 const GamePage = () => {
   const { id } = useParams();

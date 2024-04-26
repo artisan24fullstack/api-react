@@ -12,9 +12,9 @@ my-project/
 │   │   │   ├── main.scss
 │   │   │   └── variables.scss
 │   ├── components/
-│   │   ├── petitscomposants.jsx
+│   │   ├── smallcomponents.jsx
 │   ├── layout/
-│   │   ├── sectionsglobales.jsx
+│   │   ├── globalsections.jsx
 │   ├── pages/
 │   │   ├── NamePage.jsx
 │   ├── App.jsx
@@ -80,9 +80,12 @@ function App() {
 
 ```
 │   ├── pages/
+│   │   ├── NamePage.jsx
+
 ```
 
 > pages Folder
+- > Naming conventions (NamePage.jsx)
 
 - The files in the pages folder indicate the route of the react application. 
 - Each file in this folder contains its route. 
