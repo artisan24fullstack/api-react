@@ -1,6 +1,36 @@
-Install npm i react-router-dom
+## React Packages Used
+
+> Install npm i react-router-dom
 
 - https://react-icons.github.io/react-icons/
+
+## Getting Started
+
+To get started with the project, follow these steps:
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env` file in the root directory of the project and add your API key:
+- https://vitejs.dev/guide/env-and-mode
+
+   ```plaintext
+   VITE_API_KEY=api-key
+
+   console.log(import.meta.env.VITE_API_KEY) // "api-key"
+
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost` to view the application.
 
 ### Step-by-step template for setting up
 my-project/
@@ -51,6 +81,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/url/:id' element={<namePage />} />
         </Routes>
       </BrowserRouter>
 

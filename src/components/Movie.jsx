@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 export default function Movie() {
   const [gameMovies, setGameMovies] = useState([]);
-  let { id } = useParams();
+  const { id } = useParams();
 
   console.log(id)
   useEffect(() => {
