@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../layout/Header.jsx';
 import SearchBar from '../layout/SearchBar.jsx';
+import Movie from '../components/Movie.jsx';
+import Screenshots from '../components/Screenshots.jsx';
 
 const GamePage = () => {
   const { id } = useParams();
@@ -100,7 +102,12 @@ const GamePage = () => {
           </div>
         </>
       )}
+      <hr />
+      <Screenshots />
+      <hr />
+      <Movie />
     </div>
+
   );
 };
 
