@@ -125,3 +125,11 @@ function App() {
 - A page can contain its sub folder. 
 - Each page has its state and is usually used to call an sync operation. 
 - It usually consists of various components grouped.
+
+
+```
+useNavigate ? 
+```
+- https://reactrouter.com/en/main/hooks/use-navigate
+- https://medium.com/@bobjunior542/using-usenavigate-in-react-router-6-a-complete-guide-46f51403f430
+- https://blogs.perficient.com/2024/03/22/usenavigate-navigation-react-router-v6/

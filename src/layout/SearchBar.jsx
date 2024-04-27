@@ -15,10 +15,6 @@ function SearchBar() {
     navigate(`/search?query=${searchTerm}`);
   };
 
-  const handleCart = () => {
-    navigate('/cart');
-  }
-
   return (
     <div className='SearchBar'>
       <form className="search-form" onSubmit={handleSubmit}>
